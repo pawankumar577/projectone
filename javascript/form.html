@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+    #box{
+        width: 100%;
+        height: 200px;
+        border: 5px solid black;
+    }
+    i{
+        background-color: aqua;
+    }
+    .fa-brands{
+        background-color: brown;
+    }
+    .fa-facebook{
+        background-color: red;
+    }
+
+    </style>
+</head>
+<body>
+    <i class="fa-brands fa-facebook"></i>
+    <form action="" onsubmit="submi()">
+        Name:<input type="text" oninvalid="onin()" onchange="change()" onfocus="call(this)" onblur="add(this)" oninput="sum()" id="name" required>
+        <br>
+        <br>
+        Class:<input type="text" onfocus="call(this)" onblur="add(this)" onselect="selet()" value="hiii i am priya" id="class">
+        <br>
+        <br>
+       
+        <br>
+        <br>
+        <button type="submit">click me</button>
+
+    </form>
+    <div id="box"></div>
+
+    <script>
+
+
+
+     function submi(){
+       alert("form is submit");
+     }
+     function onin(){
+       alert("name field is invalid");
+     }
+    //  function call(element){
+    //   element.style.backgroundColor = "green";
+    //  }
+     function selet(){
+       alert("hii priya mam");
+     }
+    //  function add(element){
+    //   element.style.backgroundColor = "";
+    //  }
+
+     function change(){
+      var x = document.getElementById("name").value;
+      document.getElementById("box").innerHTML = x;
+     }
+    //  function sum(){
+    //   var x = document.getElementById("name").value;
+    //   document.getElementById("box").innerHTML = x;
+    //  }
+    //  function call(){
+    // .style.backgroundColor = "green";
+    //   document.getElementById("name").style.backgroundColor = "green";
+    //  }
+
+    </script>
+</body>
+</html>

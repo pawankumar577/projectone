@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            position: relative;
+            top: 100px;
+            left: 00px;
+        }
+        #box{
+            position: relative;
+            top: -100px;
+            left: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <!-- <div id="one" class="box"></div> -->
+
+   <div class="box"> Name:<input type="text" id="fname">
+    <br>
+    <br>
+    address:<input type="text" id="addd">
+    <br>
+    <br>
+    email:<input type="text" id="em">
+    <br>
+    <br>
+    phn no.:<input type="text" id="phn">
+    <br>
+    <br>
+    Submit:<button id="btn">Submit</button>
+</div>
+<br>
+<br><br>
+
+    <div id="box">
+        <table border="2" cellspacing="0" cellpadding="10">
+
+
+      <tr>
+       <th>Name</th>
+       <th>address</th>
+       <th>email</th>
+       <th>phn no.</th>
+      </tr>
+      <tr>
+       <td id="tname"></td>
+       <td id="aname"></td>
+       <td id="ename"></td>
+       <td id="pname"></td>
+      </tr>
+     
+    </table>
+</div>
+
+   <script>
+
+//    .getElementById("one").addEventListener("click",fuc);
+//    document.getElementById("one").addEventListener("click",add);
+//    document.getElementById("one").addEventListener("mouseenter",sum);
+//     function fuc(){
+//         document.getElementById("one").style.backgroundColor="green";
+//     }document
+//     function add(){
+//         document.getElementById("one").style.border="10px solid black";
+//     }
+//     function sum(){
+//         document.getElementById("one").style.borderRadius="50px";
+//     }
+    
+
+     
+      document.getElementById("btn").addEventListener("click",sub);
+      document.getElementById("btn").addEventListener("click",nam);
+      document.getElementById("btn").addEventListener("click",add);
+      document.getElementById("btn").addEventListener("click",num);
+       function sub(){
+        var x = document.getElementById("fname").value;
+        document.getElementById("tname").innerHTML = x;
+
+       }
+       function nam(){
+        var x = document.getElementById("addd").value;
+        document.getElementById("aname").innerHTML = x;
+
+       }
+       function add(){
+        var x = document.getElementById("em").value;
+        document.getElementById("ename").innerHTML = x;
+
+       }
+       function num(){
+        var x = document.getElementById("phn").value;
+        document.getElementById("pname").innerHTML = x;
+
+       }
+
+   </script>
+
+
+
+</body>
+</html>
